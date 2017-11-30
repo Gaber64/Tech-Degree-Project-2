@@ -1,0 +1,362 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  line-height: 1.75em;
+}
+
+a:visited {
+ color: black;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.sec-nav {
+display: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.main-content {
+  background: white;
+  padding: 57.750px 0;
+}
+
+footer {
+  max-width: 92%;
+  margin: 0 auto ;
+  color: grey;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 27px;
+}
+
+span {
+  font-weight: 600;
+  color: grey;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+#line {
+  width: 100%;
+  margin: auto;
+  padding-top: 70px;
+  border-bottom: 1px solid lightgrey;
+}
+
+a:hover {
+  color: grey;
+}
+
+h3, h1, h4 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-nav li {
+  display: block;
+  margin: 8px 15px;
+  padding: 15px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.profile-image {
+  max-width: 65%;
+  margin-bottom: 19px;
+}
+
+.about-me {
+  margin-top: 46px;
+  margin-bottom: 46px;
+  color: grey;
+}
+
+.Port {
+margin-bottom: 56px;
+}
+
+#gallery li {
+  line-height: 1.5rem;
+  margin: 50px 0;
+}
+
+#gallery li p {
+  max-width: 90%;
+}
+
+#gallery img{
+  max-width: 92%;
+}
+
+section h2 {
+  margin: 77px 0 38.5px 0;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #73C6B6;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #DC7633;
+}
+
+.contact-info li {
+  margin: 17px;
+}
+
+.contact-info {
+  margin-top: 10%;
+}
+
+.main-footer {
+  margin-top: 77px;
+}
+
+.main-footer h2 {
+  margin-bottom: 35px;
+}
+
+.footer {
+  color: black;
+  font-size: .95em;
+}
+
+h4 {
+  float: left;
+}
+
+h5 {
+  float: right;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+  
+@media only screen and (min-width: 768px) {
+    .main-nav {
+    margin-bottom: 60px;
+  }
+  
+  .main-nav a,
+  .main-nav li {
+    display: inline;
+    background: inherit;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .about-me img {
+    max-width: 30%;
+    float: right;
+    margin-top: 0;
+    margin-right: 2%;
+  }
+  
+  .about-me p {
+    text-align: left;
+    max-width: 55%;
+    font-size: 1.3em;
+    margin-left: 27.906px;
+    line-height: 1.85em;
+  }
+  
+  .main-footer p {
+    font-size: 1.25em;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .main-footer li {
+    display: block;
+    font-size: 1.1em;
+  }
+  
+  h4 {
+    font-size: .88em;
+  }
+  
+  h5 {
+    display: none;
+  }
+  
+  .sec-nav {
+    display:inline;
+    float: right;
+  }
+  
+  .sec-nav a,
+  .sec-nav li {
+    display: inline;
+  }
+  
+  .sec-nav a{
+    padding: 15px;
+    font-size: .68em;
+    font-weight: 700;
+    margin-top: 15px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+  }
+  
+  .sec-nav{
+    margin-bottom: 55px;
+  } 
+  
+  header {
+    margin-top: 55px;
+  }
+  
+/*
+    #gallery li:nth-child(2n + 1){
+    clear: left;
+  }
+*/
+  
+  #gallery li {
+    float: left;
+    max-width: 50%;
+    margin: 30px 0;
+  }
+  
+  #gallery li p {
+    max-width: 60%;
+  }
+  
+  section, .sk {
+    display: inline-block;
+  }
+  
+  .sk {
+    margin: 65px 0;
+  }
+  
+  .Port {
+    margin-bottom: 40px;
+  }
+  
+  .main-content {
+    padding: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  .skills {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+ 
+  h1 {
+    float: left;
+    font-size: 1.5em
+  }
+  
+  .about-me img {
+    width: 400px;
+  }
+  
+  .about.me {
+    float:none;
+    display: inline-block;
+  }
+  
+  .main-nav {
+    float: right;
+  }
+  
+  .main-footer p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  #wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  
+  #gallery img {
+    width: 290px;
+  }
+  
+  
+  #gallery li {
+    max-width: 28.32%;
+    float: none;
+    display: inline-block;
+  }
+  
+  #gallery li p {
+    font-size: .79em;
+    max-width: 90%;
+    font-weight: 500;
+  }
+  
+  .main-content {
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  .wrap {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  
+  
+  .about-me p {
+  }
+}
+
